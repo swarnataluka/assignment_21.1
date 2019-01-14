@@ -1,0 +1,204 @@
+<!-- including header content which is common for all pages -->
+<%- include ../layouts/header.ejs %>
+<%if (messages.error){ %>
+	<p class="rml"><%- messages.error %></p>
+<% } %>
+<% if(messages.success){%>
+	<p class="gml"><%- messages.success %></p>
+<% } %>
+<form action="/users/add" method="post" name="form1"  class="ml">
+	<table width="25%" border="0">
+		<tr class="c">
+				<th>Name</th>
+				<th>Department</th>
+				<th>Designation</th>
+				<th>Salary</th>
+				<th>Date of joining</th>
+				<th>City</th>
+		</tr>
+		<tr>
+			<td><input type='text' name='Ename1' id="Ename1" value="<%= Ename %>" required autofocus placeholder='Employee name' minlength="3"></td>	
+			<td><select type='text' name='department1' value="<%= department %>" required>
+				<option value="">--Select department--</option>
+				<option value="clerical_staff">clerical_staff</option>
+				<option value="development_staff">development_staff</option>
+				<option value="logistics_staff">logistics_staff</option>
+				<option value="management_staff">management_staff</option>
+				<option value="ops_staff">ops_staff</option>
+				<option value="support_staff">support_staff</option>
+				</select></td>			
+			<td><select type='text' name='designation1' value="<%= designation %>" required>
+				<option value="">--Select designation--</option>
+				<option value="data_entry">data_entry</option>
+				<option value="technical_support">technical_support</option>
+				<option value="network_administrator">network_administrator</option>
+				<option value="Developer">Developer</option>
+				<option value="manager">manager</option>
+				<option value="team_leader">team_leader</option>
+				</select>
+			</td>		
+			<td><input type='text' name='salary1' value="<%= salary %>" required placeholder='salary'></td>			
+			<td><input type='date' name='dateofjoining1' value="<%= dateofjoining %>" required></td>
+			<td><select type='text' name='city1' value="<%= city %>" required>
+				<option value="">--Select City--</option>
+				<option value="Bangalore">Bangalore</option>
+				<option value="California">California</option>
+				<option value="Delhi">Delhi</option>
+				<option value="Newyork">Newyork</option>
+				<option value="Singapore">Singapore</option>
+				</select>
+			</td>				
+		</tr>
+		<tr>
+			<td><input type='text' name='Ename2' id="Ename2" value="<%= Ename %>" required autofocus placeholder='Employee name' minlength="3">
+			</td>	
+			<td><select type='text' name='department2' value="<%= department %>" required>
+				<option value="">--Select department--</option>
+				<option value="clerical_staff">clerical_staff</option>
+				<option value="development_staff">development_staff</option>
+				<option value="logistics_staff">logistics_staff</option>
+				<option value="management_staff">management_staff</option>
+				<option value="ops_staff">ops_staff</option>
+				<option value="support_staff">support_staff</option>
+				</select>
+			</td>			
+			<td><select type='text' name='designation2' value="<%= designation %>" required>
+				<option value="">--Select designation--</option>
+				<option value="data_entry">data_entry</option>
+				<option value="technical_support">technical_support</option>
+				<option value="network_administrator">network_administrator</option>
+				<option value="Developer">Developer</option>
+				<option value="manager">manager</option>
+				<option value="team_leader">team_leader</option>
+				</select>
+			</td>		
+			<td><input type='text' name='salary2' value="<%= salary %>" required placeholder='salary'></td>			
+			<td><input type='date' name='dateofjoining2' value="<%= dateofjoining %>" required></td>
+			<td><select type='text' name='city2' value="<%= city %>" required>
+				<option value="">--Select City--</option>
+				<option value="Bangalore">Bangalore</option>
+				<option value="California">California</option>
+				<option value="Delhi">Delhi</option>
+				<option value="Newyork">Newyork</option>
+				<option value="Singapore">Singapore</option>
+				</select>
+			</td>				
+		</tr>
+		<tr>
+			<td><input type='text' name='Ename3' id="Ename3" value="<%= Ename %>" required autofocus placeholder='Employee name' minlength="3"></td>	
+			<td><select type='text' name='department3' value="<%= department %>" required>
+				<option value="">--Select department--</option>
+				<option value="clerical_staff">clerical_staff</option>
+				<option value="development_staff">development_staff</option>
+				<option value="logistics_staff">logistics_staff</option>
+				<option value="management_staff">management_staff</option>
+				<option value="ops_staff">ops_staff</option>
+				<option value="support_staff">support_staff</option>
+				</select>
+			</td>			
+			<td><select type='text' name='designation3' value="<%= designation %>" required>
+				<option value="">--Select designation--</option>
+				<option value="data_entry">data_entry</option>
+				<option value="technical_support">technical_support</option>
+				<option value="network_administrator">network_administrator</option>
+				<option value="Developer">Developer</option>
+				<option value="manager">manager</option>
+				<option value="team_leader">team_leader</option>
+				</select>
+			</td>		
+			<td><input type='text' name='salary3' value="<%= salary %>" required placeholder='salary'></td>			
+			<td><input type='date' name='dateofjoining3' value="<%= dateofjoining %>" required></td>
+			<td><select type='text' name='city3' value="<%= city %>" required>
+				<option value="">--Select City--</option>
+				<option value="Bangalore">Bangalore</option>
+				<option value="California">California</option>
+				<option value="Delhi">Delhi</option>
+				<option value="Newyork">Newyork</option>
+				<option value="Singapore">Singapore</option>
+				</select>
+			</td>				
+		</tr>
+		<tr>
+			<td><input type='text' name='Ename4' id="Ename4" value="<%= Ename %>" required autofocus placeholder='Employee name' minlength="3"></td>	
+				<td><select type='text' name='department4' value="<%= department %>" required>
+				<option value="">--Select department--</option>
+				<option value="clerical_staff">clerical_staff</option>
+				<option value="development_staff">development_staff</option>
+				<option value="logistics_staff">logistics_staff</option>
+				<option value="management_staff">management_staff</option>
+				<option value="ops_staff">ops_staff</option>
+				<option value="support_staff">support_staff</option>
+				</select>
+			</td>			
+			<td><select type='text' name='designation4' value="<%= designation %>" required>
+				<option value="">--Select designation--</option>
+				<option value="data_entry">data_entry</option>
+				<option value="technical_support">technical_support</option>
+				<option value="network_administrator">network_administrator</option>
+				<option value="Developer">Developer</option>
+				<option value="manager">manager</option>
+				<option value="team_leader">team_leader</option>
+				</select></td>	
+				<td><input type='text' name='salary4' value="<%= salary %>" required placeholder='salary'></td>			
+				<td><input type='date' name='dateofjoining4' value="<%= dateofjoining %>" required></td>
+				<td><select type='text' name='city4' value="<%= city %>" required>
+				<option value="">--Select City--</option>
+				<option value="Bangalore">Bangalore</option>
+				<option value="California">California</option>
+				<option value="Delhi">Delhi</option>
+				<option value="Newyork">Newyork</option>
+				<option value="Singapore">Singapore</option>
+				</select>
+			</td>				
+		</tr>
+		<tr>
+			<td>
+				<input type='text' name='Ename5' id="Ename5" value="<%= Ename %>" required autofocus placeholder='Employee name' minlength="3"></td>	
+			<td>
+				<select type='text' name='department5' value="<%= department %>" required>
+				<option value="">--Select department--</option>
+				<option value="clerical_staff">clerical_staff</option>
+				<option value="development_staff">development_staff</option>
+				<option value="logistics_staff">logistics_staff</option>
+				<option value="management_staff">management_staff</option>
+				<option value="ops_staff">ops_staff</option>
+				<option value="support_staff">support_staff</option>
+				</select>
+			</td>			
+			<td><select type='text' name='designation5' value="<%= designation %>" required>
+				<option value="">--Select designation--</option>
+				<option value="data_entry">data_entry</option>
+				<option value="technical_support">technical_support</option>
+				<option value="network_administrator">network_administrator</option>
+				<option value="Developer">Developer</option>
+				<option value="manager">manager</option>
+				<option value="team_leader">team_leader</option>
+				</select>
+			</td>	
+			<td><input type='text' name='salary5' value="<%= salary %>" required placeholder='salary'></td>			
+			<td><input type='date' name='dateofjoining5' value="<%= dateofjoining %>" required></td>
+			<td><select type='text' name='city5' value="<%= city %>" required>
+				<option value="">--Select City--</option>
+				<option value="Bangalore">Bangalore</option>
+				<option value="California">California</option>
+				<option value="Delhi">Delhi</option>
+				<option value="Newyork">Newyork</option>
+				<option value="Singapore">Singapore</option>
+				</select>
+			</td>				
+			</tr>
+			<tr>
+			<td>
+			</td>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th>
+					<input type="submit" name="Submit" value="  Add  " style='margin-right:-50%;'>
+				</th>
+		</tr>
+	</table>
+</form>
+<!-- including footer content which is common for all pages -->
+<%- include ../layouts/footer.ejs %>	

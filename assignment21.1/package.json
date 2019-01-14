@@ -1,0 +1,16 @@
+{
+  "name": "assignment21.1",
+  "version": "1.0.0",
+  "description": "Assignment21.1",
+  "main": "assignment21.1.js",
+  "dependencies": {
+    "mongodb": "^3.0.10",
+    "npm": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thaluka Swarna Latha",
+  "license": "ISC"
+}
